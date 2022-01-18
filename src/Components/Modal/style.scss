@@ -1,0 +1,93 @@
+.modal-container {
+  @apply absolute w-full h-full bg-white transition transition-all ease-in-out pr-[50px] overflow-y-auto;
+  .title-pop {
+    @apply flex flex-col md:flex-row items-center justify-between md:mb-[30px] md:mt-[20px];
+    
+}   
+.close-pop{
+    @apply cursor-pointer;
+}
+.title-jet h3{
+    font-family: 'Transat 2',Helvetica,Arial,Lucida,sans-serif !important;
+    @apply font-normal text-[36px];
+}
+.info-container {
+    @apply grid grid-cols-12 md:h-full gap-6;
+   .description-container {
+     @apply col-span-12 lg:col-span-4 h-full lg:h-[100vh];
+     .p-description{
+        font-family: 'Transat 2',Helvetica,Arial,Lucida,sans-serif !important;
+        @apply md:pt-[0px] font-normal text-[18px] md:pr-[80px];
+     }
+     .p-request{
+         @apply mt-[60px] pb-[44px];
+     }
+     .request{
+        font-family: 'Transat 2',Helvetica,Arial,Lucida,sans-serif !important;
+         @apply p-[10px] bg-[#D37453] text-white text-[14px];
+     }
+   }
+   .image-container {
+     @apply col-span-12 lg:col-span-8 bg-white h-full lg:h-[100vh] ;
+   }
+  }
+}
+.imgpadre img{
+    @apply object-cover;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+//When your animation is active
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+/*****Fade In effect when component is mounted*****/
+
+
+/*****Fade Out effect when component is unmounted*****/
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: all 500ms ease-out;
+}
+.slick-dots{
+    bottom:0% !important;
+    text-align: left !important;
+    padding: 0 0 23px 0 !important;
+}
+.slick-dots li{
+    width:20% !important;
+}
+.slick-dots li a img{
+    height: 100px !important;
+}
+.slick-slide img {
+    max-height: 431px !important;
+}
+@media screen and (max-width:767px) {
+    .slick-dots{
+        top: 100%;
+    }
+    .slick-dots li a img{
+        height: 70px !important;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    .slick-dots {
+        bottom: -32% !important;
+    }
+}
+.slick-dots li:not(.slick-active) a img {
+    @apply opacity-25;
+}
+.imgcarousel{
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+}

@@ -1,0 +1,63 @@
+.jet-list-main-container {
+  @apply p-6 h-[100%] relative;
+  .modal-open{
+    @apply h-[100vh] min-h-[auto];
+  }
+  .jet-list-container {
+    @apply flex flex-col md:flex-row items-center justify-between gap-6 overflow-hidden mt-7;
+  }
+  .jet-list-sort {
+    @apply flex flex-row items-center justify-between;
+  }
+  .jet-list-cards {
+    @apply grid grid-cols-12 mt-8 gap-x-6 overflow-y-auto h-screen md:h-full pb-[80px];
+    .card {
+      @apply transition col-span-12 md:col-span-6 lg:col-span-4 h-[50%];
+    }
+  }
+
+  .sort{
+      @apply mr-4;
+  }
+  h3 {
+    font-family: 'Transat Standard' !important;
+    @apply pb-0 font-normal text-[32px];
+  }
+  img{ 
+      @apply w-full;
+  }
+  
+  .card:hover {
+    @apply shadow-2xl;
+  }
+  
+  .inner-container {
+    @apply text-center ;
+  }
+
+  .inner-container h4{
+      @apply font-bold text-[20px] uppercase;
+      color: #AA8E72;
+      font-family: 'Economica' !important;
+  }
+  select {
+      @apply border-0 font-bold text-[14px] text-black;
+      font-family: 'Transat Standard' !important;
+  }
+  
+  .spin{
+    @apply animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900;
+  }
+
+  .parent-spin{
+    @apply flex justify-center items-center;
+  }
+}
+@media (width:768px){
+  .modal-open{
+    min-height: 870px !important;
+  }
+}
+.img_card{
+  height: 236px !important;
+}

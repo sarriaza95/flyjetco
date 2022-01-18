@@ -1,0 +1,9 @@
+.main-container {
+  @apply grid grid-cols-12 min-h-full;
+ .sidebar-container {
+   @apply col-span-12 lg:col-span-2 h-full lg:h-[100vh];
+ }
+ .main-screen-container {
+   @apply col-span-12 lg:col-span-10 bg-white h-full lg:h-[100vh] overflow-hidden;
+ }
+}

@@ -1,0 +1,79 @@
+.sidebar-component-container.bg-img-sidebar {
+background-image: url('https://flyjetco.bytfm.com/wp-content/uploads/2021/12/sidebar_jetco.jpg');
+
+
+  
+@apply overflow-y-auto text-white bg-center bg-no-repeat bg-cover h-full px-8 pt-[50px] md:pt-[50px] lg:pt-[100px] pb-[50px] md:pb-[50px];
+
+.sidebar-component-container-inner-one{
+    @apply justify-center items-center;
+}
+
+.font-Economica, .sidebar-component-container-inner-two p.economica{
+    font-family: 'Economica',Helvetica,Arial,Lucida,sans-serif !important;
+}
+
+.btn{
+    @apply sm:text-[32px] md:text-[20px] lg:text-[14px] xl:text-[20px];
+    @apply sm:leading-[42px] md:leading-[32px] lg:leading-[24px] xl:leading-[2em];
+    @apply font-normal cursor-pointer;
+}
+
+.button{
+    @apply sm:text-[32px] md:text-[20px] lg:text-[10px] xl:text-[14px];
+    @apply sm:leading-[78px] md:leading-[32px] lg:leading-[19px] xl:leading-[25px];
+    @apply mt-[20px];
+}
+
+.text-color-cat{
+    color: #D37453;
+}
+
+.button{
+    @apply text-white font-normal py-2 px-4;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-component-container-inner-two{
+    @apply pt-10;
+}
+
+.info-text-title{
+    @apply sm:text-[16px] md:text-[16px] lg:text-[10px] xl:text-[10px];
+    @apply sm:leading-[24px] md:leading-[24px] lg:leading-[18px] xl:leading-[2em];
+}
+
+.info-text-content{
+    @apply sm:text-[20px] md:text-[20px] lg:text-[14px] xl:text-[14px];
+    @apply sm:leading-[28px] md:leading-[28px] lg:leading-[22px] xl:leading-[2em];
+}
+
+.economica{
+    border-bottom: 1px solid white;    
+}
+
+.sidebar-component-container-inner-two p{
+    @apply py-[5px]
+}
+
+.sidebar-component-container-inner-two div{
+    @apply lg:mb-[20px] md:mb-[15px];
+}
+}
+
+/* Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .activo{
+    @apply text-white !important;
+      background-color: #D37453 !important;
+  }
+  .active{
+    @apply text-white !important;
+  }
