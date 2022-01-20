@@ -102,7 +102,7 @@ export default function Modal() {
                 <div className='close-pop' onClick={()=>{
                   store.setModal(false);
                 }}>
-                    X
+                    <img src='/wp-content/uploads/2022/01/Exit.png'/>
                 </div>
             </div>
             

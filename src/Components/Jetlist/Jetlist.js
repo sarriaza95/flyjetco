@@ -110,17 +110,24 @@ export default function Jetlist() {
                         
                     }
                     else{
-                        return(
-                            <div className="card" key = {key} value={items.jetId} onClick={()=>{
-                                store.setModal(true);
-                                store.setJetId(items.jetId)
-                            }}>
-                                <img src={items.featuredImage.node.mediaItemUrl} alt="Avatar"/>
-                                <div className="inner-container">
-                                    <h4>{items.title}</h4>  
+                        if(items.jetDetails.inStock === true){
+                            return null;
+                        
+                        }
+                        else{
+                            return(
+                                <div className="card" key = {key} value={items.jetId} onClick={()=>{
+                                    store.setModal(true);
+                                    store.setJetId(items.jetId)
+                                }}>
+                                    <img src={items.featuredImage.node.mediaItemUrl} alt="Avatar"/>
+                                    <div className="inner-container">
+                                        <h4>{items.title}</h4>  
+                                    </div>
                                 </div>
-                            </div>
-                        )
+                            )
+                        }
+                        
                     }
                 })
             }

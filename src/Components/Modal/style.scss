@@ -23,7 +23,7 @@
          @apply mt-[60px] pb-[44px];
      }
      .request{
-        font-family: 'Transat 2',Helvetica,Arial,Lucida,sans-serif !important;
+        font-family: 'Economica',Helvetica,Arial,Lucida,sans-serif!important;
          @apply p-[10px] bg-[#D37453] text-white text-[14px];
      }
    }
@@ -67,9 +67,9 @@
 .slick-dots li a img{
     height: 100px !important;
 }
-.slick-slide img {
+/*.slick-slide img {
     max-height: 431px !important;
-}
+}*/
 @media screen and (max-width:767px) {
     .slick-dots{
         top: 100%;
