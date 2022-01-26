@@ -6,7 +6,7 @@ import 'windicss'
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
 
 const client = new ApolloClient ({
-    uri:'https://flyjetco.bytfm.com/graphql',
+    uri:'https://flyjetco.com/graphql',
     cache: new InMemoryCache()
 })
 ReactDOM.render(<ApolloProvider client={client}><App /></ApolloProvider>, document.getElementById('FLYJETCO'))

@@ -40,7 +40,6 @@ export default function Sidebar() {
         return val.length
     }
 
-
     return (
         <div className='sidebar-component-container bg-img-sidebar no-scrollbar'>
             <div className='sidebar-component-container-inner-one'>
@@ -63,7 +62,7 @@ export default function Sidebar() {
                                 }
                                 }
                                     className={`text-color-cat font-Economica btn ${category.name === active ? "active" : ""}`}>
-                                    {category.name} ({!store.inStock ? category.jets.nodes.length : perra(category)})
+                                    {category.name} ({!store.inStock ? category.jets.nodes.length - perra(category)  : perra(category)})
                                 </h3>
                             </div>
                         })
@@ -121,7 +120,7 @@ export default function Sidebar() {
                     </div>
                     <div className='divide-y divide-gray-400'>
                         <p className="economica info-text-title">Cabin Size:</p>
-                        <p className="info-text-content">{store.CabinSize}</p>
+                        <p className="info-text-content" dangerouslySetInnerHTML={{__html:store.CabinSize}}></p>
                     </div>
                     <div className='divide-y divide-gray-400'>
                         <p className="economica info-text-title">Maximun Range:</p>

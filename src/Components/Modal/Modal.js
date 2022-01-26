@@ -88,8 +88,7 @@ export default function Modal() {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay:true
+      slidesToScroll: 1
     };
     return (
         <CSSTransition in={store.modal} timeout={500} classNames='fade' unmountOnExit={true}>
@@ -131,7 +130,7 @@ export default function Modal() {
                           </div>
                           <div className='divide-y divide-gray-400'>
                               <p className="economica info-text-title">Cabin Size:</p>
-                              <p className="info-text-content">{store.CabinSize}</p>
+                              <p className="info-text-content" dangerouslySetInnerHTML={{__html:store.CabinSize}}></p>
                           </div>
                           <div className='divide-y divide-gray-400'>
                               <p className="economica info-text-title">Maximun Range:</p>
@@ -156,7 +155,7 @@ export default function Modal() {
                       ? DataModal.jetDetails.inStock === true 
                         ? <a className='request' href={ DataModal.jetDetails.pdfLink !== null 
                           ? DataModal.jetDetails.pdfLink.mediaItemUrl 
-                          : "#" } target='__blank'>Request More Info</a> 
+                          : "#" } target='__blank'>Download Brochure</a> 
                         : <a className='request' href='/get-a-quote/' target='__blank'>Get in Touch</a> 
                       : null 
                       }
