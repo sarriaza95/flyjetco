@@ -61,7 +61,7 @@ export default function Sidebar() {
                                     }
                                 }
                                 }
-                                    className={`text-color-cat font-Economica btn ${category.name === active ? "active" : ""}`}>
+                                    className={`text-color-cat font_economica btn ${category.name === active ? "active" : ""}`}>
                                     {category.name} ({!store.inStock ? category.jets.nodes.length - perra(category)  : perra(category)})
                                 </h3>
                             </div>
@@ -91,21 +91,22 @@ export default function Sidebar() {
                 }
                 {
                     !loading ? <h4 onClick={() => {
+                        store.setCurrentCategory('ALL');
+                        store.setinStock(true);
                         store.setBtnActive(true)
                         console.log(store.BtnActive)
 
-                        if (store.inStock) {
+                        /*if (store.inStock) {
                             store.setinStock(false);
                         }
                         else {
                             store.setinStock(true);
-                        }
+                        }*/
 
 
                         if (store.modal === true) {
                             store.setModal(false);
                         }
-
                     }} className={`button ${store.BtnActive ? 'activo' : null}`}>
                         View Inventory
                     </h4> : null
